@@ -45,7 +45,7 @@
                 Clicked="btnIrStack_Clicked"
                 WidthRequest="120"
                 HeightRequest="40"
-                HorizontalOptions="Centar"
+                HorizontalOptions="Center"
                 VerticalOptions="Center"
                 BackgroundColor="White"
 
