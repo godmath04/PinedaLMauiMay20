@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="PinedaLMauiMay20.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:PinedaLMauiMay20"
+    Shell.FlyoutBehavior="Disabled"
+    Title="PinedaLMauiMay20">
+
+    <ShellContent
+        Title="Stack Layout"
+        ContentTemplate="{DataTemplate local:GridLayoutPage}"
+        Route="GridLayoutPage" />
+
+</Shell>
