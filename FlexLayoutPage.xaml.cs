@@ -7,8 +7,8 @@ public partial class FlexLayoutPage : ContentPage
         InitializeComponent();
     }
 
-    private void btnRegresar_Clicked(object sender, EventArgs e)
+    private async void OnGoToAbsoluteLayoutClicked(object sender, EventArgs e)
     {
-        Navigation.PopAsync();
+        await Navigation.PushAsync(new AbsoluteLayoutPage());
     }
 }
