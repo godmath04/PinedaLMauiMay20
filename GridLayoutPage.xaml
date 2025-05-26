@@ -3,53 +3,31 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PinedaLMauiMay20.GridLayoutPage"
              Title="GridLayoutPage">
-    <Grid>
+    <Grid RowSpacing="0" ColumnSpacing="0">
         <Grid.RowDefinitions>
-            <RowDefinition Height="2*" />
-            <RowDefinition />
-            <RowDefinition Height="100" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <BoxView Color="Green" />
-        <Label Text="Row 0, Column 0"
-               HorizontalOptions="Center"
-               VerticalOptions="Center" />
-        <BoxView Grid.Column="1"
-                 Color="Blue" />
-        <Label Grid.Column="1"
-               Text="Row 0, Column 1"
-               HorizontalOptions="Center"
-               VerticalOptions="Center" />
-        <BoxView Grid.Row="1"
-                 Color="Teal" />
-        <Label Grid.Row="1"
-               Text="Row 1, Column 0"
-               HorizontalOptions="Center"
-               VerticalOptions="Center" />
-        <BoxView Grid.Row="1"
-                 Grid.Column="1"
-                 Color="Purple" />
-        <Label Grid.Row="1"
-               Grid.Column="1"
-               Text="Row1, Column 1"
-               HorizontalOptions="Center"
-               VerticalOptions="Center" />
-        <Button 
-                Grid.Row="1"
-                Grid.Column="1"
-                Text="Ir al stack"
-                x:Name="btnIrStack"
-                Clicked="btnIrStack_Clicked"
-                WidthRequest="120"
-                HeightRequest="40"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                BackgroundColor="White"
 
-          
-            />
+        <!-- Cuadrante superior izquierdo -->
+        <BoxView Grid.Row="0" Grid.Column="0" Color="Red" />
+
+        <!-- Cuadrante superior derecho -->
+        <BoxView Grid.Row="0" Grid.Column="1" Color="Blue" />
+
+        <!-- Cuadrante inferior izquierdo -->
+        <BoxView Grid.Row="1" Grid.Column="0" Color="Green" />
+
+        <!-- Cuadrante inferior derecho con botón -->
+        <Grid Grid.Row="1" Grid.Column="1" BackgroundColor="Yellow">
+            <Button Text="Ir a StackLayout"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Clicked="btnIrStack_Clicked"/>
+        </Grid>
     </Grid>
 </ContentPage>

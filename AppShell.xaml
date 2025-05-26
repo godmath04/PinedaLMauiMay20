@@ -8,8 +8,18 @@
     Title="PinedaLMauiMay20">
 
     <ShellContent
-        Title="Stack Layout"
+        Title="Grid Layout"
         ContentTemplate="{DataTemplate local:GridLayoutPage}"
         Route="GridLayoutPage" />
+
+    <ShellContent
+        Title="Stack Layout"
+        ContentTemplate="{DataTemplate local:StackLayoutPage}"
+        Route="StackLayoutPage" />
+
+    <ShellContent
+        Title="Flex Layout"
+        ContentTemplate="{DataTemplate local:FlexLayoutPage}"
+        Route="FlexLayoutPage" />
 
 </Shell>
