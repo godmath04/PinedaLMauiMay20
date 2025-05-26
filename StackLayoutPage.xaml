@@ -9,7 +9,7 @@
                FontSize="Large"
                HorizontalOptions="Center" />
 
-        <Label Text="Andrés"
+        <Label Text="Elian"
                FontSize="Medium"
                HorizontalOptions="Center" />
 

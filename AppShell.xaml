@@ -22,4 +22,9 @@
         ContentTemplate="{DataTemplate local:FlexLayoutPage}"
         Route="FlexLayoutPage" />
 
+    <ShellContent
+    Title="Absolute Layout"
+    ContentTemplate="{DataTemplate local:AbsoluteLayoutPage}"
+    Route="AbsoluteLayoutPage" />
+
 </Shell>

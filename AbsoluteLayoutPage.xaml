@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PinedaLMauiMay20.AbsoluteLayoutPage"
+             Title="AbsoluteLayoutPage">
+
+    <AbsoluteLayout>
+
+        <!-- iicono fijo -->
+        <Image Source="libro.jpeg"
+               AbsoluteLayout.LayoutBounds="0.5,0,100,100"
+               AbsoluteLayout.LayoutFlags="PositionProportional"
+               HorizontalOptions="Center"
+               VerticalOptions="Start" />
+
+        <!-- boton en la esquina inferior derecha -->
+        <Button Text="Volver a Grid"
+                Clicked="OnVolverGridClicked"
+                AbsoluteLayout.LayoutBounds="1,1,150,60"
+                AbsoluteLayout.LayoutFlags="PositionProportional" />
+    </AbsoluteLayout>
+
+</ContentPage>
